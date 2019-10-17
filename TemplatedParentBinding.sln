@@ -11,11 +11,14 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TemplatedParentBinding.iOS"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TemplatedParentBinding.UWP", "TemplatedParentBinding\TemplatedParentBinding.UWP\TemplatedParentBinding.UWP.csproj", "{73573C11-E941-46F3-9E82-788776353EC7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TemplatedParentBinding.Wasm", "TemplatedParentBinding\TemplatedParentBinding.Wasm\TemplatedParentBinding.Wasm.csproj", "{5E32FBC4-8058-4DE8-9E44-3A287D5820E9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TemplatedParentBinding.Wasm", "TemplatedParentBinding\TemplatedParentBinding.Wasm\TemplatedParentBinding.Wasm.csproj", "{5E32FBC4-8058-4DE8-9E44-3A287D5820E9}"
 EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		TemplatedParentBinding\TemplatedParentBinding.Shared\TemplatedParentBinding.Shared.projitems*{2f0a13fc-8ff5-44b4-b276-1d669c36e703}*SharedItemsImports = 4
 		TemplatedParentBinding\TemplatedParentBinding.Shared\TemplatedParentBinding.Shared.projitems*{6279c845-92f8-4333-ab99-3d213163593c}*SharedItemsImports = 13
+		TemplatedParentBinding\TemplatedParentBinding.Shared\TemplatedParentBinding.Shared.projitems*{73573c11-e941-46f3-9e82-788776353ec7}*SharedItemsImports = 4
+		TemplatedParentBinding\TemplatedParentBinding.Shared\TemplatedParentBinding.Shared.projitems*{80d22fd6-c3f8-49f1-8c38-3e27db5292a1}*SharedItemsImports = 4
 	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Ad-Hoc|Any CPU = Ad-Hoc|Any CPU

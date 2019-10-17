@@ -7,7 +7,27 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
+	<Page.Resources>
+		<Style x:Key="CustomControlStyle"
+			   TargetType="local:CustomControl">
+			<Setter Property="Template">
+				<Setter.Value>
+					<ControlTemplate>
+						<Button Content="Click me">
+							<Button.Flyout>
+								<MenuFlyout>
+									<MenuFlyoutItem Text="{Binding CustomProperty, RelativeSource={RelativeSource Mode=TemplatedParent}, FallbackValue='The binding has failed'}" />
+								</MenuFlyout>
+							</Button.Flyout>
+						</Button>
+					</ControlTemplate>
+				</Setter.Value>
+			</Setter>
+		</Style>
+	</Page.Resources>
+
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-		<TextBlock Text="Hello, world !" Margin="20" FontSize="30" />
-    </Grid>
+		<local:CustomControl CustomProperty="5"
+							 Style="{StaticResource CustomControlStyle}"/>
+	</Grid>
 </Page>
